@@ -168,6 +168,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed darkgray;
+  padding: 20px;
+}
+header .nav h1 {
+  margin-left: 40px;
+}
+header .nav nav {
+  margin-right: 40px;
+}
+header .nav nav a {
+  margin: 15px;
+  padding: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+header .header-img {
+  margin: 0px 60px;
+}
+header .header-text {
+  margin: 20px 60px;
+  border-bottom: 2px dashed darkgray;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -226,11 +253,12 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  background-color: lightblue;
+  background-color: teal;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
+  border-radius: 15px;
 }
