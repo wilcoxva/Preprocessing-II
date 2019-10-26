@@ -1,17 +1,11 @@
 // Navigation Styles here
 header {
 
-    // max-width: 800px;
-    // width: 100%;
-    // margin: 0 auto;
-
     .nav {
         .flex(space-between, center); 
         border-bottom: 2px dashed darkgray;
         padding: 20px;
 
-        nav {
-            margin-right: 40px;
 
             a {
                 margin: 15px;
@@ -19,10 +13,17 @@ header {
                 font-size: 1.5rem;
                 text-decoration: none;
                 color: black;
-            }
-            
-        }
 
+                @media @mobile {
+                    margin: 5px;
+                    padding: 5px;
+                }
+            }
+
+        @media @mobile {
+            display: block;
+            text-align: center;
+        }        
     }
     
     .header-text {

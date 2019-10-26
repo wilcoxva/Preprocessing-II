@@ -168,6 +168,12 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 90%;
+  }
+}
 header .nav {
   display: flex;
   justify-content: space-between;
@@ -175,15 +181,24 @@ header .nav {
   border-bottom: 2px dashed darkgray;
   padding: 20px;
 }
-header .nav nav {
-  margin-right: 40px;
-}
-header .nav nav a {
+header .nav a {
   margin: 15px;
   padding: 15px;
   font-size: 1.5rem;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  header .nav a {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media (max-width: 500px) {
+  header .nav {
+    display: block;
+    text-align: center;
+  }
 }
 header .header-text {
   border-bottom: 2px dashed darkgray;
@@ -209,9 +224,19 @@ header .header-text {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -219,6 +244,12 @@ header .header-text {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -232,6 +263,11 @@ header .header-text {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -241,9 +277,20 @@ header .header-text {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: block;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 85%;
+    margin-left: 10%;
+  }
 }
 .home .content-pick .destination .btn {
   background-color: teal;
